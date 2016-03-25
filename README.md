@@ -11,3 +11,6 @@ git 使用
 * `git log --stat` --stat 仅显示简要的增改行数统计 
 * `git log --author=zjt --since=2016-01-01` 增加显示条件  
 * `git add -p file` -p 分阶段提交代码
+* `git reset --hard commit_id`,`git push origin HEAD -force` 撤销到某次提交
+* `git checkout master` `git pull` `git merge develop` 合并分支
+* `git fetch origin` `git rebase origin/master` 与主干同步
