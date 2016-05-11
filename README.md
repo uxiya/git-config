@@ -17,10 +17,10 @@ git 使用
 
 git flow
 * `git checkout -b develop master` 创建开发分支
-* `git checkout -b feature-x develop` 创建功能分支
-* `git branch -d feature-x` 删除功能分支
+* `git checkout -b feature/x develop` 创建功能分支
+* `git branch -d featurex` 删除功能分支
 * `git push origin --delete xxx` 删除远程分支
 * `git push origin --delete tag xxx` 删除tag
-* `git checkout -b release-1.0 develop` 创建预发布分支 
-* `git tag -a 0.2 -m "tag info" master` `git push --tags` 创建标签 推送标签
+* `git checkout -b release/0.1 develop` 创建预发布分支 
+* `git tag -a 0.1 -m "tag info" master` `git push --tags` 创建标签 推送标签
 
