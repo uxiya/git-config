@@ -12,5 +12,15 @@ git 使用
 * `git log --author=zjt --since=2016-01-01` 增加显示条件  
 * `git add -p file` -p 分阶段提交代码
 * `git reset --hard commit_id`,`git push origin HEAD -force` 撤销到某次提交
-* `git checkout master` `git pull` `git merge develop` 合并分支
+* `git checkout master` `git pull` `git merge --no-ff develop` 合并分支 --no-ff 取消快进合并fast-farward merge,产生一个节点
 * `git fetch origin` `git rebase origin/master` 与主干同步
+
+git flow
+* `git checkout -b develop master` 创建开发分支
+* `git checkout -b feature-x develop` 创建功能分支
+* `git branch -d feature-x` 删除功能分支
+* `git push origin --delete xxx` 删除远程分支
+* `git push origin --delete tag xxx` 删除tag
+* `git checkout -b release-1.0 develop` 创建预发布分支 
+* `git tag -a 0.2 -m "tag info" master` `git push --tags` 创建标签 推送标签
+
