@@ -23,4 +23,5 @@ git flow
 * `git push origin --delete tag xxx` 删除tag
 * `git checkout -b release/0.1 develop` 创建预发布分支 
 * `git tag -a 0.1 -m "tag info" master` `git push --tags` 创建标签 推送标签
+* `git remote prune origin` 删除本地但在远程不存在的远程分支
 
